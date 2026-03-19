@@ -1,2 +1,2 @@
 # **PYTHON - ESTUDONAUTA**
-Aprendendo lógica de programação com o Guanabara!
+Aprendendo **lógica de programação** com o **Guanabara!**
