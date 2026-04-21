@@ -1,0 +1,21 @@
+conti = 'S'
+pessoas = list()
+pessoa_maior = []
+pessoa_menor = []
+contador = maior = menor = 0
+while conti == 'S':
+    nome = str(input('Digite o seu nome: ')).capitalize().strip()
+    peso = float(input('Digite o seu peso: '))
+    pessoas.append((nome, peso))
+    conti = str(input('Deseja continuar [S/N]? ')).upper()
+    contador += 1
+print (f'Temos {contador} pessoas cadastradas no total;')
+for p in pessoas:
+    if p[1] >= 100:
+        maior += 1
+        pessoa_maior.append(p[0])
+    else:
+        menor += 1
+        pessoa_menor.append(p[0])
+print (f'Temos {maior} pessoas com sobrepeso (ACIMA DE 100 OU 100KG), são: {pessoa_maior}')
+print (f'Temos {menor} pessoas com um peso ideal (ABAIXO DE 100KG), são: {pessoa_menor}')

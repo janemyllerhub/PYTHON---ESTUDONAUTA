@@ -1,11 +1,11 @@
-numeros = [[],[]]
-for c in range (1,8):
-    nun = int(input(f'Número {c}: '))
-    if nun % 2 == 0:
-        numeros[0].append(nun)
+numeros = 0
+lista = list()
+for c in range(1,8):
+    nun = int(input(f'{c}°: Digite um valor: '))
+    numeros = nun
+    if nun / 2 == 0:
+        lista.append(numeros[:])
     else:
-        numeros[1].append(nun)
-numeros[0].sort()
-numeros[1].sort()
-print (f'''Números pares: {numeros[0]}
-Números impares: {numeros[1]}''')
+        lista.append(numeros[:])
+print (f'Os valores pares digitados foram: {lista[0]}')
+print (f'Os valores ímpares digitados foram: {lista[1]}')
