@@ -4,4 +4,4 @@ vetor = []
 for c in range (0,7):
     nun = random.randint(0,100)
     vetor.append(nun)
-print (vetor, end='')
+,print (vetor, end='')
